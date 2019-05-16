@@ -1,0 +1,1006 @@
+//colors
+$color_mine_shaft_approx: #333;
+
+//fonts
+$font_0: Lato;
+$font_1: Courier New;
+$font_2: Courier;
+$font_3: monospace;
+
+//urls
+$url_0: url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjxAwXiWtFCfQ7A.woff2);
+
+body {
+	font-family: $font_0, $font_1, $font_2, $font_3;
+	font-style: normal;
+	font-weight: 400;
+	src: local('Lato Regular'), local('Lato-Regular'), $url_0 format('woff2');
+	unicode-range: U +0100-024F, U +0259, U +1E00-1EFF, U +2020, U +20A0-20AB, U +20AD-20CF, U +2113, U +2C60-2C7F, U +A720-A7FF;
+	color: $color_mine_shaft_approx;
+}
+
+//colors
+$color_shark_approx: rgb(43, 40, 40);
+$white: white;
+$black: black;
+$color_mojo_approx: rgb(204, 79, 63);
+$red: red;
+$color_schooner_approx: rgb(136, 129, 129);
+$color_chicago_approx: rgb(95, 91, 91);
+
+//fonts
+$font_0: Times New Roman;
+$font_1: Times;
+$font_2: serif;
+$font_3: Playfair Display;
+$font_4: Georgia;
+$font_5: Cambria;
+$font_6: Lucida Sans;
+$font_7: Lucida Sans Regular;
+$font_8: Lucida Grande;
+$font_9: Lucida Sans Unicode;
+$font_10: Geneva;
+$font_11: Verdana;
+$font_12: sans-serif;
+
+//urls
+$url_0: url(../images/fondo.jpg);
+$url_1: url(../images/menu.png);
+$url_2: url(../images/flecha.png);
+$url_3: url(../images/check.svg);
+
+#header {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.container {
+	display: flex ¡important;
+	justify-content: space-between;
+	max-width: 900px;
+	position: relative;
+}
+.menus {
+	display: flex;
+	position: absolute;
+	right: -15px;
+	cursor: pointer;
+}
+.primera {
+	background-image: $url_0;
+	background-repeat: no-repeat;
+	background-size: 130%;
+}
+.navbar-light {
+	.navbar-toggler-icon {
+		background-image: $url_1;
+		background-size: 20px;
+		border-color: $white;
+		outline: none;
+	}
+	.navbar-nav .nav-link {
+		color: $color_shark_approx;
+		display: flex;
+		align-content: center;
+		justify-content: space-between;
+		letter-spacing: 1.5px;
+		padding: 5px 25px;
+		font-size: 11px;
+		font-weight: 900;
+	}
+}
+.logo {
+	width: 52px;
+	height: 50px;
+	position: absolute;
+	top: -2px;
+	left: -2px;
+}
+.nav-item {
+	font-weight: bold;
+	font-size: 20px;
+}
+.principal {
+	display: block;
+}
+.cotizador {
+	color: $white;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 9px;
+	margin-bottom: 8px;
+	letter-spacing: 2.5px;
+}
+.description {
+	font-weight: bold;
+	font-size: 13px;
+	text-align: center;
+	text-transform: uppercase;
+	color: $black;
+	letter-spacing: 2px;
+	font-family: $font_0, $font_1, $font_2;
+}
+.line {
+	background-color: $black;
+	display: inline-block;
+	height: 1px;
+	vertical-align: middle;
+	width: 40px;
+}
+.line-datos {
+	background-color: $color_mojo_approx;
+	display: inline-block;
+	height: 1px;
+	vertical-align: middle;
+	width: 150px;
+}
+p {
+	font-size: 10px;
+	margin-top: -5px;
+	margin-bottom: 15px;
+}
+.ancla {
+	color: $black;
+	font-weight: bold;
+	text-decoration-line: underline;
+}
+.text-elegir {
+	font-weight: bold;
+	font-style: italic;
+	font-size: 95px;
+	font-family: $font_3, $font_4, $font_5, $font_0, $font_1, $font_2;
+	text-align: center;
+	color: $white;
+	margin-top: -20px;
+}
+.contenedor {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: $white;
+	position: relative;
+	margin-top: 50px;
+}
+.auto {
+	margin-top: 30px;
+	margin-bottom: -100px;
+	width: 360px;
+	height: 230px;
+	position: absolute;
+	z-index: 1;
+}
+.segunda {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.cotizar {
+	background: $white;
+	position: relative;
+	margin-top: 65px;
+	width: 900px;
+}
+.formulario {
+	margin-left: 10px;
+	margin-right: 150px;
+	font-family: $font_6, $font_7, $font_8, $font_9, $font_10, $font_11, $font_12;
+	letter-spacing: 2.5px;
+	margin-left: 80px;
+	margin-right: 80px;
+}
+.inicial {
+	margin-top: 55px;
+}
+.indice {
+	background: $url_2;
+	background-size: 15px;
+	background-repeat: no-repeat;
+	background-position-x: right;
+	background-position-y: center;
+	background-origin: content-box;
+	padding-right: .75em;
+}
+.forma {
+	border: solid $color_mojo_approx 1px;
+	border-radius: 0;
+	padding-left: 5px;
+}
+.datos {
+	color: $red;
+	font-weight: bold;
+	font-size: 40px;
+	font-family: $font_3;
+	font-style: italic;
+	font-weight: 700;
+	margin-top: 20px;
+}
+.etiqueta {
+	color: $color_shark_approx;
+	height: 40px;
+	font-size: 12px;
+	font-weight: 600;
+	letter-spacing: 2px;
+}
+.titulo {
+	color: $color_schooner_approx;
+	font-size: 12px;
+	margin-bottom: 1.5px;
+}
+#bttelefono {
+	background: $white;
+	width: 247px;
+	display: flex;
+	justify-content: space-evenly;
+	outline: none;
+	margin: 0;
+}
+.phone_w {
+	position: absolute;
+	top: 12px;
+	left: 68px;
+	display: block;
+	transform: rotateY(35deg);
+	margin-right: 10px;
+}
+#btemail {
+	background: $white;
+	width: 247px;
+	margin-left: -10px;
+	display: flex;
+	justify-content: space-evenly;
+	outline: none;
+}
+.ocultar {
+	display: none !important;
+}
+.mail_w {
+	position: absolute;
+	top: 14px;
+	left: 69px;
+	display: block;
+}
+#btambos {
+	background: $white;
+	width: 247px;
+	margin-left: -21px;
+	outline: none;
+}
+.pago {
+	margin-right: 50px;
+	margin-left: 50px;
+}
+#contado {
+	width: 107%;
+	background: $white;
+	outline: none;
+}
+#credito {
+	width: 105%;
+	margin-left: -16px;
+	background: $white;
+	outline: none;
+}
+#enganche {
+	text-align: left;
+}
+.terminos {
+	position: relative;
+	padding-bottom: 50px;
+}
+.btenvio {
+	width: 110px;
+	height: 35px;
+	padding: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	position: absolute;
+	right: 0;
+	font-size: 11px;
+	font-weight: bold;
+	letter-spacing: 3px;
+	background: $white;
+	&:hover {
+		background: $red;
+		color: $white;
+		outline: none;
+	}
+}
+.comentarios {
+	text-align: left;
+	color: $black;
+}
+.form-check {
+	margin-bottom: -10px;
+}
+.success {
+	background: $red !important;
+	border: solid $white 1px;
+	color: $white;
+}
+.checks {
+	margin-left: 30px;
+	margin-bottom: .5px;
+	color: $color_shark_approx;
+	height: 40px;
+	vertical-align: baseline;
+	font-size: 12px;
+	font-weight: normal;
+}
+input[type=checkbox] {
+	display: none;
+	+ label {
+		cursor: pointer;
+	}
+	&:checked + .checks::before {
+		content: '';
+		background-image: $url_3;
+		background-size: 14px;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+}
+.checks::before {
+	content: ' ';
+	background: transparent;
+	border: 1px solid $color_chicago_approx;
+	border-radius: 0;
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	height: 22px;
+	width: 22px;
+	margin-right: 20px;
+	position: absolute;
+	left: 0;
+}
+footer {
+	height: 100px;
+	background: $red;
+}
+@media(max-width: 1024px) {
+	.cotizar {
+		width: 736px;
+		margin-top: 90px;
+	}
+	.primera {
+		background-size: 1900px;
+	}
+	.auto {
+		width: 340px;
+		height: 210px;
+	}
+	#menu4 {
+		display: none;
+	}
+	.text-elegir {
+		font-size: 85px;
+	}
+	.inicial {
+		margin-top: 35px;
+	}
+	.line {
+		width: 50px;
+		margin: 10px;
+	}
+	.line-datos {
+		width: 90px;
+		margin-right: 0;
+	}
+	#bttelefono {
+		width: 191px;
+	}
+	.phone_w {
+		top: 12px;
+		left: 48px;
+	}
+	#btemail {
+		width: 191px;
+		margin-left: -11px;
+	}
+	.mail_w {
+		position: absolute;
+		top: 14px;
+		left: 51px;
+		display: block;
+	}
+	#btambos {
+		width: 192px;
+		margin-left: -22px;
+	}
+	.titulo {
+		font-size: 10px;
+	}
+	.etiqueta {
+		font-size: 10px;
+	}
+	.checks {
+		font-size: 12px;
+	}
+	.navbar-light .navbar-nav .nav-link {
+		padding: 5px 30px;
+	}
+}
+@media(max-width: 768px) {
+	.cotizar {
+		width: 736px;
+		margin-top: 90px;
+	}
+	.primera {
+		background-size: 1900px;
+	}
+	.auto {
+		width: 340px;
+		height: 210px;
+	}
+	#menu4 {
+		display: none;
+	}
+	.text-elegir {
+		font-size: 85px;
+	}
+	.inicial {
+		margin-top: 35px;
+	}
+	.line {
+		width: 50px;
+		margin: 10px;
+	}
+	.line-datos {
+		width: 90px;
+		margin-right: 0;
+	}
+	#bttelefono {
+		width: 191px;
+	}
+	.phone_w {
+		position: absolute;
+		top: 12px;
+		left: 50px;
+		display: block;
+		transform: rotateY(35deg);
+		margin-right: 10px;
+	}
+	#btemail {
+		width: 191px;
+		margin-left: -11px;
+	}
+	.mail_w {
+		position: absolute;
+		top: 14px;
+		left: 51px;
+		display: block;
+	}
+	#btambos {
+		width: 191px;
+	}
+	.titulo {
+		font-size: 10px;
+	}
+	.etiqueta {
+		font-size: 10px;
+	}
+	.checks {
+		font-size: 12px;
+	}
+	.navbar-light .navbar-nav .nav-link {
+		padding: 5px 30px;
+	}
+}
+@media(max-width: 746px) {
+	.cotizar {
+		width: 736px;
+		margin-top: 90px;
+	}
+	.primera {
+		background-size: 1900px;
+	}
+	.auto {
+		width: 340px;
+		height: 210px;
+	}
+	#menu4 {
+		display: inline;
+	}
+	.menus {
+		display: none;
+	}
+	.text-elegir {
+		font-size: 85px;
+	}
+	.inicial {
+		margin-top: 35px;
+	}
+	.line {
+		width: 50px;
+		margin: 10px;
+	}
+	.line-datos {
+		width: 90px;
+		margin-right: 0;
+	}
+	#bttelefono {
+		width: 191px;
+	}
+	#btemail {
+		width: 191px;
+		margin-left: -10px;
+	}
+	#btambos {
+		width: 191px;
+		margin-left: -21px;
+	}
+	.titulo {
+		font-size: 10px;
+	}
+	.etiqueta {
+		font-size: 10px;
+	}
+	.checks {
+		font-size: 12px;
+	}
+	.navbar-light .navbar-nav .nav-link {
+		padding: 5px 30px;
+	}
+}
+@media(max-width: 480px ) {
+	#header {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: auto;
+		position: relative;
+	}
+	.logo {
+		width: 48px;
+		height: 48px;
+		position: absolute;
+		top: 10px;
+		left: 0;
+		margin-bottom: 12px;
+	}
+	.menus {
+		display: none;
+	}
+	#menu4 {
+		display: inline;
+	}
+	#button {
+		border-style: none;
+		outline: none;
+		height: auto;
+	}
+	.navbar-collapse {
+		margin-top: 20px;
+	}
+	.description {
+		font-size: 10px;
+	}
+	.line {
+		display: none;
+	}
+	.text-elegir {
+		font-size: 45px;
+		margin-top: -10px;
+	}
+	.auto {
+		margin-top: 0;
+		width: 200px;
+		height: 120px;
+	}
+	.primera {
+		background-size: 1024px;
+	}
+	.cotizar {
+		margin-top: 20px;
+		width: 100%;
+	}
+	.formulario {
+		margin-left: 16px;
+		margin-right: 16px;
+		width: 90%;
+	}
+	#modelo {
+		margin-top: -10px;
+		margin-bottom: -60px;
+	}
+	.etiqueta {
+		letter-spacing: 3px;
+	}
+	.datos {
+		font-size: 30px;
+	}
+	.line-datos {
+		display: none;
+	}
+	.forma {
+		margin-top: 0;
+	}
+	.mb-4 {
+		margin-bottom: 0 !important;
+	}
+	.contactar {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	#bttelefono {
+		width: 123px;
+		height: 50px;
+		font-size: 10px;
+		padding-top: 20px;
+	}
+	#Img_telefono {
+		position: absolute;
+		height: 15px;
+		top: 10px;
+		display: flex;
+	}
+	.phone_w {
+		top: 10px;
+		left: 68px;
+	}
+	#btemail {
+		width: 124px;
+		height: 50px;
+		font-size: 10px;
+		padding-top: 20px;
+		margin-left: -12px;
+	}
+	#Img_mail {
+		position: absolute;
+		top: 10px;
+		display: flex;
+	}
+	.mail_w {
+		position: absolute;
+		top: 12px;
+		left: 57px;
+		display: block;
+	}
+	#btambos {
+		width: 124px;
+		height: 50px;
+		font-size: 10px;
+		margin-left: -22px;
+	}
+	.pago {
+		margin-right: 0;
+		margin-left: 0;
+	}
+	#contado {
+		width: 185px;
+		margin-left: -15px;
+	}
+	#credito {
+		width: 185px;
+		margin-left: -16px;
+	}
+	.terminos {
+		display: block;
+	}
+	.btenvio {
+		width: 100px;
+		height: 35px;
+		position: absolute;
+		text-align: center;
+		left: 130px;
+		bottom: 20px;
+	}
+	.ancla {
+		color: $black;
+		font-weight: bold;
+		text-decoration-line: underline;
+	}
+	.checks {
+		letter-spacing: 0;
+		font-size: 12px;
+	}
+	.navbar-light .navbar-nav .nav-link {
+		color: $black;
+		display: flex;
+		align-content: center;
+		justify-content: space-between;
+		padding: .4rem .8rem;
+		font-size: 12px;
+	}
+}
+@media(max-width: 375px) {
+	#header {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: auto;
+		position: relative;
+	}
+	.logo {
+		width: 48px;
+		height: 48px;
+		position: absolute;
+		top: 10px;
+		left: 0;
+		margin-bottom: 12px;
+	}
+	.menus {
+		display: none;
+	}
+	#button {
+		border-style: none;
+		outline: none;
+		height: auto;
+	}
+	.navbar-collapse {
+		margin-top: 20px;
+	}
+	.description {
+		font-size: 10px;
+	}
+	.line {
+		display: none;
+	}
+	.text-elegir {
+		font-size: 45px;
+		margin-top: -10px;
+	}
+	.auto {
+		margin-top: 0;
+		width: 200px;
+		height: 120px;
+	}
+	.primera {
+		background-size: 1024px;
+	}
+	.cotizar {
+		margin-top: 20px;
+		width: 100%;
+	}
+	.formulario {
+		margin-left: 16px;
+		margin-right: 16px;
+	}
+	#modelo {
+		margin-top: -10px;
+		margin-bottom: -60px;
+	}
+	.etiqueta {
+		letter-spacing: 3px;
+	}
+	.datos {
+		font-size: 30px;
+	}
+	.line-datos {
+		display: none;
+	}
+	.forma {
+		margin-top: 0;
+	}
+	.mb-4 {
+		margin-bottom: 0 !important;
+	}
+	.contactar {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	#bttelefono {
+		width: 115px;
+		font-size: 9px;
+		height: 50px;
+		padding-top: 20px;
+	}
+	.phone_w {
+		top: 8px;
+		left: 68px;
+	}
+	#btemail {
+		width: 111px;
+		height: 50px;
+		font-size: 9px;
+		padding-top: 20px;
+		margin-left: -11px;
+		margin-left: -8px;
+	}
+	.mail_w {
+		top: 12px;
+		left: 54px;
+	}
+	#btambos {
+		width: 111px;
+		height: 50px;
+		font-size: 9px;
+		margin-left: -19px;
+	}
+	.pago {
+		margin-right: 0;
+		margin-left: 0;
+	}
+	#contado {
+		width: 168px;
+		margin-left: -15px !important;
+	}
+	#credito {
+		width: 168px;
+		margin-left: -16px;
+	}
+	.terminos {
+		display: block;
+	}
+	.btenvio {
+		width: 100px;
+		height: 35px;
+		position: absolute;
+		text-align: center;
+		left: 110px;
+		bottom: 20px;
+	}
+	.checks {
+		letter-spacing: 0;
+		font-size: 12px;
+	}
+	.navbar-light .navbar-nav .nav-link {
+		color: $black;
+		display: flex;
+		align-content: center;
+		justify-content: space-between;
+		padding: .4rem .8rem;
+		font-size: 10px;
+	}
+}
+@media(max-width: 320px) {
+	#header {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: auto;
+		position: relative;
+	}
+	.logo {
+		width: 48px;
+		height: 48px;
+		position: absolute;
+		top: 10px;
+		left: 0;
+		margin-bottom: 12px;
+	}
+	.menus {
+		display: none;
+	}
+	#button {
+		border-style: none;
+		outline: none;
+		height: auto;
+	}
+	.navbar-collapse {
+		margin-top: 20px;
+	}
+	.description {
+		font-size: 10px;
+	}
+	.line {
+		display: none;
+	}
+	.text-elegir {
+		font-size: 45px;
+		margin-top: -10px;
+	}
+	.auto {
+		margin-top: 0;
+		width: 200px;
+		height: 120px;
+	}
+	.primera {
+		background-size: 1024px;
+	}
+	.cotizar {
+		margin-top: 20px;
+		width: 100%;
+	}
+	.formulario {
+		margin-left: 16px;
+		margin-right: 16px;
+	}
+	#modelo {
+		margin-top: -10px;
+		margin-bottom: -60px;
+	}
+	.etiqueta {
+		letter-spacing: 3px;
+	}
+	.datos {
+		font-size: 30px;
+	}
+	.line-datos {
+		display: none;
+	}
+	.forma {
+		margin-top: 0;
+	}
+	.mb-4 {
+		margin-bottom: 0 !important;
+	}
+	.contactar {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	#bttelefono {
+		width: 95px;
+		height: 50px;
+		font-size: 9px;
+	}
+	.phone_w {
+		position: absolute;
+		top: 10px;
+		left: 55px;
+		display: block;
+		transform: rotateY(35deg);
+		margin-right: 10px;
+	}
+	#btemail {
+		width: 95px;
+		height: 50px;
+		font-size: 9px;
+		padding-top: 20px;
+		margin-left: -11px;
+	}
+	.mail_w {
+		position: absolute;
+		top: 12px;
+		left: 44px;
+		display: block;
+	}
+	#btambos {
+		width: 95px;
+		height: 50px;
+		font-size: 9px;
+		margin-left: -22px;
+	}
+	.pago {
+		margin-right: 0;
+		margin-left: 0;
+	}
+	.cash {
+		margin: 0 !important;
+		margin-bottom: 1px !important;
+	}
+	#contado {
+		width: 145px;
+		margin-left: -15px !important;
+	}
+	#credito {
+		width: 143px;
+		margin-left: -14px;
+	}
+	.terminos {
+		display: block;
+	}
+	.btenvio {
+		width: 100px;
+		height: 35px;
+		position: absolute;
+		text-align: center;
+		left: 85px;
+		bottom: 20px;
+		font-size: 10px;
+	}
+	.ancla {
+		color: $black;
+		font-weight: bold;
+		text-decoration-line: underline;
+	}
+	.checks {
+		letter-spacing: 0;
+		font-size: 12px;
+	}
+	.navbar-light .navbar-nav .nav-link {
+		color: $black;
+		display: flex;
+		align-content: center;
+		justify-content: space-between;
+		padding: .4rem .8rem;
+		font-size: 10px;
+	}
+}

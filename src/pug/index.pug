@@ -1,0 +1,208 @@
+meta(charset='UTF-8')
+meta(name='viewport', content='width=device-width,initial-scale=1')
+meta(http-equiv='X-UA-Compatible', content='ie=edge')
+title Formulario Cotizacion
+link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css', integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T', crossorigin='anonymous')
+link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i|Playfair+Display:400,400i,700,700i,900,900i')
+link(rel='icon', type='images/png', href='./src/images/logo-fiat.png')
+link(rel='stylesheet', href='./src/css/main.css')
+nav#header.navbar.navbar-expand-lg.navbar-expand-md.navbar-light.bg-light.sticky-top
+  .container
+    a.navbar-brand(href='index.html')
+      img.rounded.logo(src='../images/logo-fiat.png', alt='Logo Fiat')
+    button#button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+    .collapse.navbar-collapse.ms-navbar-collapse#navbarSupportedContent
+      ul.navbar-nav.m-auto
+        li.nav-item
+          a.nav-link#menu(href='#principal') MODELOS
+        li.nav-item
+          a.nav-link#menu1(href='#principal') PRUEBA DE MANEJO
+        li.nav-item
+          a.nav-link#menu2(href='#cotizar') COTIZAR
+        li.nav-item
+          a.nav-link#menu3(href='#principal') PROMOCIONES
+        li.nav-item
+          a.nav-link#menu4(href='#principal') DISTRIBUIDORES
+      li.nav-item.nav-link.menus
+        div
+          img(src='../images/menu.png', height='18px')
+section.primera
+  section.principal#principal
+    br
+    .cotizador Cotizador
+    h3.description
+      span.line
+      | Citadino, Aventurero, Deportivo
+      span.line
+    .text-elegir Elige el tuyo
+    .contenedor
+      img.auto(src='../images/fiat.png', alt='')
+  section.segunda
+    section.cotizar
+      .formulario#cotizar
+        .row.mb-1.inicial
+          .col-lg-6.col-md-6.col-ms-12.inicial#modelo
+            form
+              .form-group
+                label.titulo.ml-1(for='formGroupExampleInput') MODELO
+                select.etiqueta.custom-select.custom-select-lg.mb-3.forma.indice
+                  option(selected='') SELECCIONA
+                  option(value='1') MODELO 1
+                  option(value='2') MODELO 2
+                  option(value='3') MODELO 3
+          .col-lg-6.col-md-6.col-ms-12.inicial
+            form
+              .form-group
+                label.titulo.ml-1(for='formGroupExampleInput') VERSION
+                select.etiqueta.custom-select.custom-select-lg.mb-3.forma.indice
+                  option(selected='') SELECCIONA
+                  option(value='1') VERSION 0.1
+                  option(value='2') VERSION 0.2
+                  option(value='3') VERSION 0.3
+        .row.mb-1
+          .col-lg-6.col-md-6.col-ms-12
+            form
+              .form-group
+                label.titulo.ml-1(for='formGroupExampleInput') ESTADO
+                select.etiqueta.custom-select.custom-select-lg.mb-3.forma.indice
+                  option(selected='') SELECCIONA
+                  option(value='1') MEXICO
+                  option(value='2') JALISCO
+                  option(value='3') COAHUILA
+          .col-lg-6.col-md-6.col-ms-12
+            form
+              .form-group
+                label.titulo.ml-1(for='formGroupExampleInput') DISTRIBUIDOR
+                select.etiqueta.custom-select.custom-select-lg.mb-3.forma.indice
+                  option(selected='') SELECCIONA
+                  option(value='1') DISTRIBUIDOR 1
+                  option(value='2') DISTRIBUIDOR 2
+                  option(value='3') DISTRIBUIDOR 3
+        .row.mb-4
+          .col-12.text-center
+            h3.datos.text-center
+              span.line-datos
+              | Datos personales
+              span.line-datos
+            p ESCRIBE TUS DATOS PERSONALES
+        .row.mb-4
+          .col-lg-4.col-md-4.col-ms-12
+            form
+              .form-group
+                label.titulo.ml-1(for='formGroupExampleInput') NOMBRE (S)
+                input.etiqueta.form-control.forma(type='text', placeholder='ESCRIBE TU NOMBRE')
+          .col-lg-4.col-md-4.col-ms-12
+            form
+              .form-group
+                label.titulo.ml-1(for='formGroupExampleInput') APELLIDO PATERNO
+                input.etiqueta.form-control.forma(type='text', placeholder='ESCRIBE TU APELLIDO')
+          .col-lg-4.col-md-4.col-ms-12
+            form
+              .form-group
+                label.titulo.ml-1(for='formGroupExampleInput') APELLIDO MATERNO
+                input.etiqueta.form-control.forma(type='text', placeholder='ESCRIBE TU APELLIDO')
+        .row.mb-4
+          .col-lg-4.col-md-4.col-ms-12
+            form
+              .form-group
+                label.titulo.ml-1(for='formGroupExampleInput') EMAIL
+                input.etiqueta.form-control.forma(type='email', placeholder='CORREO@EMAIL.COM.MX')
+          .col-lg-4.col-md-4.col-ms-12
+            form
+              .form-group
+                label.titulo.ml-1(for='formGroupExampleInput') TELEFONO
+                input.etiqueta.form-control.forma(type='email', placeholder='01 . 844 . 439 . 0654')
+        .row
+          .col-lg-12.col-md-12.col-ms-12
+            label.titulo.ml-1(for='formGroupExampleInput') DESEO SER CONTACTADO POR
+        .row.contactar
+          .col-4
+            form
+              .form-group
+                // <input type="button" id="bttelefono" class="etiqueta form-control forma" value="TELÉFONO"> 
+                button#bttelefono.etiqueta.forma(type='button')
+                  img#Img_telefono(src='../images/telefono.png', width='10px')
+                  |  
+                  img.ocultar#phone_w(src='../images/phone.png', width='13px')
+                  | TELÉFONO
+          .col-4
+            form
+              .form-group
+                // <input type="button" id="btemail" class="etiqueta form-control forma" value="EMAIL"> 
+                button#btemail.etiqueta.forma(type='button')
+                  img#Img_mail(src='../images/mail.png', width='14px', height='15px')
+                  |  
+                  img.ocultar#mail_w(src='../images/mail_white.jpg', width='14px', height='10')
+                  |  EMAIL
+          .col-4
+            form
+              .form-group
+                button#btambos.etiqueta.forma(type='button') AMBOS
+        .row.mb-4.mt-4
+          .col-12.text-center
+            h3.datos.text-center
+              span.line-datos
+              | Forma de pago
+              span.line-datos
+            p PERSONALIZA TU COTIZACION
+        .row.pago
+          .col-12
+            form
+              div
+                label.titulo(for='formGroupExampleInput') ELIGE TU FORMA DE PAGO
+          .col-6
+            form
+              .form-group
+                // <input type="button" id="contado" class="etiqueta form-control forma text-center contacto" value=" CONTADO"> 
+                button#contado.etiqueta.forma.text-center.contacto(type='button') CONTADO
+          .col-6
+            form
+              .form-group
+                // <input type="button" id="credito" class="etiqueta form-control forma text-center contacto" value="CRÉDITO"> 
+                button#credito.etiqueta.forma.text-center.contacto(type='button') CRÉDITO
+        .row.pago
+          .col-lg-6.col-md-6.col-ms-12
+            form
+              .form-group
+                label.titulo.ml-3(for='formGroupExampleInput') CANTIDAD DE ENGANCHE
+                input#enganche.etiqueta.form-control.forma(type='text', placeholder='$ 80.000.00')
+          .col-lg-6.col-md-6.col-ms-12
+            form
+              .form-group
+                label.titulo.ml-3(for='formGroupExampleInput') PLAZO
+                select.etiqueta.custom-select.custom-select-lg.mb-3.forma.indice
+                  option(selected='') SELECCIONA
+                  option(value='1') 12 MESES
+                  option(value='2') 24 MESES
+                  option(value='3') 48 MESES
+                  option(value='3') 72 MESES
+        .row.mb-1.mt-4
+          .col-12.text-center
+            h3.datos.text-center
+              span.line-datos
+              | Comentarios
+              span.line-datos
+            p NOS IMPORTAN TUS COMENTARIOS
+        .row
+          .col
+            form
+              .form-group
+                label.titulo(for='formGroupExampleInput') ¿DUDAS? ¿COMENTARIOS?
+                textarea.form-control.comentarios.forma.etiqueta(rows='8', placeholder='ESCRIBENOS')
+        .terminos.mt-4
+          div
+            input#check1(type='checkbox')
+            label.etiqueta.checks(for='check1')
+              | He leido y acepto el 
+              a.ancla(href='#') aviso de privacidad
+          div
+            input#check2(type='checkbox')
+            label.checks(for='check2') No deseo recibir notificaciones
+            button.btenvio.forma#btenviar ENVIAR
+script(src="./src/js/bundle.js")
+script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js', integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo', crossorigin='Marcos Vallejo')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js', integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1', crossorigin='Marcos Vallejo')
+script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js', integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM', crossorigin='Marcos Vallejo')
+script(src='./src/js/index.js')
+footer
