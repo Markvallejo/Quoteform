@@ -29,32 +29,15 @@ module.exports = {
                         'css-loader', 'sass-loader'
                 ]
              },
-             {
-                test: /\.pug$/,
-                use: [
-                    {
-                        loader: 'html-loader',
-                        options: {
-                            publicPath: "./images"
-                        }
-                    },
-                    {
-                        loader: 'pug-html-loader', 
-                        options: { 
-                            pretty: false 
-                        }
-                    }
-                ]
-            },
             {
                 test: /\.(png|jpg|gif|woff|eot|ttf|svg)$/,
                 use: [
                   {
                     loader: 'url-loader',
                     options: {
-                      limit: 10000,
+                      limit: 100000,
                       fallback: 'file-loader',
-                      name: '../../src/images/[name].[hash].[ext]',
+                      name: './src/images/[name].[hash].[ext]',
                     }
                   }
                 ]

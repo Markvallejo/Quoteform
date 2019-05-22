@@ -50,9 +50,6 @@ module.exports = {
                     },
                     {
                         loader: 'pug-html-loader', 
-                        options: { 
-                            pretty: false 
-                        }
                     }
                 ]
             },
@@ -62,9 +59,9 @@ module.exports = {
                   {
                     loader: 'url-loader',
                     options: {
-                      limit: 10000000,
+                      limit: 1000000,
                       fallback: 'file-loader',
-                      name: '../../src/images/[name].[hash].[ext]',
+                      name: './src/images/[name].[hash].[ext]',
                     }
                   }
                 ]
